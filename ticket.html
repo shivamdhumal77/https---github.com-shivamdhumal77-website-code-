@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Festava Live - Ticket HTML Form</title>
+    <title>Quiz</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,13 +22,7 @@
     <link href="css/bootstrap-icons.css" rel="stylesheet">
 
     <link href="css/templatemo-festava-live.css" rel="stylesheet">
-    <!--
 
-TemplateMo 583 Festava Live
-
-https://templatemo.com/tm-583-festava-live
-
--->
 
 </head>
 
@@ -43,7 +37,7 @@ https://templatemo.com/tm-583-festava-live
                     <div class="col-lg-12 col-12 d-flex flex-wrap">
                         <p class="d-flex me-4 mb-0">
                             <i class="bi-person custom-icon me-2"></i>
-                            <strong class="text-dark">Welcome to Music Festival 2023</strong>
+                            <strong class="text-dark">Welcome to AyurMate</strong>
                         </p>
                     </div>
 
@@ -57,8 +51,6 @@ https://templatemo.com/tm-583-festava-live
                 <a class="navbar-brand" href="index.html">
                     AyurMate
                 </a>
-
-                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,23 +68,17 @@ https://templatemo.com/tm-583-festava-live
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_3">Artists</a>
+                            <a class="nav-link click-scroll" href="index.html#section_3">Meet Doctors</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_4">Schedule</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html#section_5">Pricing</a>
+                            <a class="nav-link click-scroll" href="index.html#section_5">Products</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="index.html#section_6">Contact</a>
                         </li>
                     </ul>
-
-                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a>
                 </div>
             </div>
         </nav>
@@ -105,27 +91,18 @@ https://templatemo.com/tm-583-festava-live
                 <div class="row">
 
                     <div class="col-lg-6 col-10 mx-auto">
-                        <form class="custom-form ticket-form mb-5 mb-lg-0" action="#" method="post" role="form">
+                        <div style="background-color: aliceblue; border: 3px solid black; border-radius: 17px; padding: 30px; margin:auto">
                             <h2 class="text-center mb-4">Get started here</h2>
 
                             <div class="ticket-form-body">
-                                <div class="row">
-                                    <div  style="border:7px solid ;">
-                                       Questions 1
-                                    </div>
-                                    <div style="border:7px solid ;">
-                                       Questions 2
-                                    </div>
-                                    <div  style="border:7px solid ;">
-                                       Questions 3
-                                    </div>
-
-                                    
-                                </div>
-
-                               
+                                <!-- Quiz -->
+                                <div id="question"></div>
+                                <div id="options"></div>
+                                <div id="dosha" style="border: 2px solid black; margin-top:10px; background-color:yellow; border-radius:20px; padding: 5px; ">Your Dominant dosha is : ..........</div>
+                                
+                                
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
         </section>
@@ -138,7 +115,7 @@ https://templatemo.com/tm-583-festava-live
                 <div class="row">
 
                     <div class="col-lg-6 col-12">
-                        <h2 class="text-white mb-lg-0">Festava Live</h2>
+                        <h2 class="text-white mb-lg-0">Learn About Yourself.</h2>
                     </div>
 
                     <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
@@ -181,35 +158,7 @@ https://templatemo.com/tm-583-festava-live
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-12 mb-4 pb-2">
-                    <h5 class="site-footer-title mb-3">Links</h5>
-
-                    <ul class="site-footer-links">
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Home</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">About</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Artists</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Schedule</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Pricing</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                
 
                 <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                     <h5 class="site-footer-title mb-3">Have a question?</h5>
@@ -276,12 +225,9 @@ https://templatemo.com/tm-583-festava-live
         </div>
     </footer>
 
-    <!--
 
-T e m p l a t e M o
-
--->
     <!-- JAVASCRIPT FILES -->
+    <script src="js/quiz.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
